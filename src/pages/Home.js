@@ -102,6 +102,45 @@ const Section = styled.section`
       gap: 30px;
     }
   }
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+    .meals {
+      .meals-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .random-meal {
+      max-width: 280px;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 767px) {
+    .meals {
+      .meals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    h1, h2 {
+      font-size: 24px;
+    }
+    .random-meal {
+      max-width: 250px;
+    }
+    .meals {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
 `;
 
 export default Home

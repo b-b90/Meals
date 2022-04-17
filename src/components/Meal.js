@@ -30,6 +30,12 @@ const Div = styled.div`
     font-size: 20px;
     color: #463F3A;
   }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+    }
+    
+  }
 `;
 
 export default Meal

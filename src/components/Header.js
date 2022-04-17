@@ -65,6 +65,16 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (max-width: 575px) {
+    ul {
+      li {
+        font-size: 18px;
+        +li {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 `;
 
 export default Header

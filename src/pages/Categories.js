@@ -50,6 +50,23 @@ const Main = styled.main`
       margin-top: 10px;
     }
   }
+  @media (max-width: 991px) {
+    .categories-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 575px) {
+    h1 {
+      font-size: 30px;
+    }
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
 `;
 
 export default Categories

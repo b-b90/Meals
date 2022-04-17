@@ -42,7 +42,7 @@ const MealDetails = () => {
 }
 
 const Main = styled.main`
-  padding: 50px 0;
+  padding: 50px 15px;
   max-width: 1100px;
   margin: 0 auto;
   h1 {
@@ -85,6 +85,31 @@ const Main = styled.main`
         font-weight: 400;
         padding: 5px 15px 0;
       }
+    }
+  }
+  @media (max-width: 991px) {
+    .ingredients {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .ingredient {
+        h2 {
+          font-size: 18px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 17px;
+    }
+    iframe {
+      height: 210px;
     }
   }
 `;

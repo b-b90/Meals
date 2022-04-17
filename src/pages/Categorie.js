@@ -39,6 +39,20 @@ const Main = styled.main`
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
+  @media (max-width: 991px) {
+    .meals-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 30px;
+    }
+    .meals-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
 `;
 
 export default Categorie
